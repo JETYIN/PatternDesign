@@ -46,7 +46,7 @@ public class MyOkHttp {
 		int user_age;
 		boolean user_work;
 		int user_born;
-
+/**new MyOkhttp.Builder()调用此方法**/
 		public Builder() {
 			user_name = "dylan";
 			user_age = 18;
