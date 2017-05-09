@@ -29,4 +29,5 @@ public class Test {
 		s = s + "china";
 		System.out.println(s.getClass() + "@" + s.hashCode());
 	}
+	
 }
