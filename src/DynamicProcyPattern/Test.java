@@ -15,6 +15,8 @@ public class Test {
 
 		// 获取被代理类的classLoader
 		ClassLoader classLoader = xiaoming.getClass().getClassLoader();
+
+		show(classLoader);
 		// 动态构造一个代理者-律师
 
 		ILawFolw lawyer = (ILawFolw) Proxy.newProxyInstance(classLoader,
@@ -23,5 +25,17 @@ public class Test {
 		lawyer.requestLaw();
 		lawyer.requestNews();
 		lawyer.requestLawyer();
+	}
+
+	/**classLoader的上层是ExtClassLoader-->AppClassLoader**/
+	/** 显示类加载器 **/
+	public static void show(ClassLoader loader) {
+
+		ClassLoader tempLoader = null;
+
+		System.out.println(loader);
+		tempLoader = loader.getParent();
+
+		System.out.println(tempLoader);
 	}
 }

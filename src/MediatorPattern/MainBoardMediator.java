@@ -9,6 +9,7 @@ public class MainBoardMediator extends Mediator {
 	private SoundColleague soundColleague;// 声卡
 	private GraphiceColleague graphiceColleague;// 显卡
 
+	/**具体的中介者模式分配各个成员关系**/
 	@Override
 	protected void handwareChange(Colleague c) {
 		// TODO Auto-generated method stub
