@@ -7,4 +7,11 @@ public static void main(String[] args) {
 	factoy.creatProduct(ProductA.class).show();
 	factoy.creatProduct(ProductB.class).show();
 }
+
+
+public static void show(){
+	
+
+
+}
 }
