@@ -1,11 +1,17 @@
 package FactoryPattern;
 
-public class ProductA extends Product{
+public class ProductA extends Product {
+
+	private String message;
+
+	public ProductA(String message) {
+		this.message = message;
+	}
 
 	@Override
 	protected void show() {
 		// TODO Auto-generated method stub
-		System.out.println("this is A");
+		System.out.println("message:" + message);
 	}
 
 }

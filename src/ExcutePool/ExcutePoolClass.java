@@ -10,7 +10,7 @@ public class ExcutePoolClass {
 
 	// 创建
 	private static ExecutorService service;
-	private static int poolSize = 10;
+	private static int poolSize = 10;//指定线程池数量
 
 	// 创建了一个size为10的线程池
 	public static ExecutorService getExecutorService() {
@@ -26,7 +26,7 @@ public class ExcutePoolClass {
 		getExecutorService().submit(runnable);
 	}
 
-	//返回一个future对象
+	//返回一个future对象,可以根据返回的Future对象进行处理判断，是否结束或移除任务
 	public static Future<?> submit(Callable<?> call) {
 		return getExecutorService().submit(call);
 	}

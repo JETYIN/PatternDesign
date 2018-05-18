@@ -1,5 +1,6 @@
 package FactoryPattern;
 
+/**此为抽象工厂方法**/
 public abstract class Factory {
 
 	//定义生成,传入对应的类名生成相关类的对象

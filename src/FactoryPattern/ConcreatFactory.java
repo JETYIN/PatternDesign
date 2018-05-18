@@ -5,11 +5,13 @@ import java.lang.reflect.InvocationTargetException;
 
 public class ConcreatFactory extends Factory {
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public <T extends Product> T creatProduct(Class<T> cla) {
 		// TODO Auto-generated method stub
 		Product product = null;
 		try {
+			//根据传入的class名称进行创建对象
 			product = (Product) Class.forName(cla.getName()).newInstance();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -32,9 +34,9 @@ public class ConcreatFactory extends Factory {
 			if (clasz.length > 0) {
 				boolean isThisConstructor = true;// 有参的构造函数可能由多个
 				for (int i = 0; i < clasz.length; i++) {
-					//3.将构造函数的参数列表与传入的不定参数列表遍历比较是否是相同数据类型，设置boolean的flag，条件成立则可创建对象
+					// 3.将构造函数的参数列表与传入的不定参数列表遍历比较是否是相同数据类型，设置boolean的flag，条件成立则可创建对象
 					Class clas = clasz[i];
-					if (!clas.isInstance(args[i])) {//等同于instanceof
+					if (!clas.isInstance(args[i])) {// 等同于instanceof
 						isThisConstructor = false;
 					}
 
