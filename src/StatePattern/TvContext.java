@@ -6,7 +6,7 @@ public class TvContext {
 	private TvContext() {
 	}
 
-	private static TvContext instance;
+	private volatile static TvContext instance;
 
 	public static TvContext getInstance() {
 		if (instance == null) {

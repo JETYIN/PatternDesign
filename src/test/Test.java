@@ -1,12 +1,10 @@
 package test;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import ChainPattern.Grouper;
 import ChainPattern.Manger;
@@ -19,7 +17,7 @@ import StatePattern.TvOnStatus;
 public class Test {
 
 	public static void main(String[] args) {
-		String goodsName = "60563元萨法宝";
+		String goodsName = "60763元萨法宝";
 		String payUnit;
 		String num;
 		// MyClass.init();
@@ -79,7 +77,7 @@ public class Test {
 	}
 
 	public static void testMap(String target) {
-
+		
 		Map<String, List<String>> map = getMap();
 		Iterator<String> it = map.keySet().iterator();
 		while (it.hasNext()) {

@@ -15,4 +15,5 @@ public class Context {
 		strategy.showTavel();
 	}
 
+	// TODO 可以使用泛型生成一个策略创建工厂
 }

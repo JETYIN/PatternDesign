@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.7.0_17"/>
 	<classpathentry exported="true" kind="lib" path="libs/commons-codec-1.4.jar"/>
 	<classpathentry exported="true" kind="lib" path="libs/httpclient-4.4.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="libs/httpcore-4.4.1.jar"/>
 	<classpathentry kind="lib" path="libs/fastjson-1.2.29.jar"/>
 	<classpathentry kind="lib" path="libs/commons-logging-1.2.jar"/>
 	<classpathentry kind="lib" path="libs/poi.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
